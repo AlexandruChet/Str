@@ -1,0 +1,201 @@
+header {
+	height: 170px;
+	width: 100%;
+	background-color: rgb(61, 57, 57);
+	nav {
+		margin-left: 10%;
+		ul {
+			display: flex;
+			list-style-type: none;
+			gap: 15%;
+			padding-top: 50px;
+			.li-a {
+				text-decoration: none;
+				img {
+					height: 90px;
+					border-radius: 50px;
+				}
+			}
+			.a-li {
+				text-decoration: none;
+				cursor: pointer;
+				transition: 0.55s;
+				@include text(#fff, sans-serif, 1.5em);
+			}
+			.a-li:hover {
+				background-color: #fff;
+				color: rgb(61, 57, 57);
+				font-size: 2px 2px #fff;
+				box-shadow: 0 0 20px rgb(255, 255, 255),
+					0 0 40px rgba(249, 252, 255, 0.6), 0 0 60px rgba(171, 198, 226, 0.6);
+				transform: scale(1.1);
+				padding: 30px;
+				border-radius: 50px;
+			}
+		}
+	}
+}
+
+.new-construction-div {
+	background: url('/project/src/assets/img/покраска.webp') no-repeat
+		center/cover;
+	background-size: cover;
+	background-position: center;
+	padding: 40px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	height: 500px;
+	.new-construction-title {
+		font-size: 36px;
+		font-weight: bold;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		.new-construction-description {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 30px;
+		}
+	}
+	.new-construction-button {
+		font-family: sans-serif;
+		padding: 15px 30px;
+		background-color: #ffb400;
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+		border-radius: 5px;
+	}
+	.new-construction-button:hover {
+		animation: button 5s;
+	}
+
+	@keyframes button {
+		50% {
+			background-color: #ff0404;
+			box-shadow: 0 0 20px rgb(255, 0, 0), 0 0 40px rgba(249, 252, 255, 0.6),
+				0 0 60px rgba(171, 198, 226, 0.6);
+			transform: scale(1.2);
+			border-radius: 30px;
+		}
+		100% {
+			font-family: sans-serif;
+			padding: 15px 30px;
+			background-color: #ffb400;
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			border-radius: 5px;
+			transform: scale(1);
+		}
+	}
+}
+.div-about-interior {
+	background-color: #d9ff00;
+	width: 100%;
+	height: 600px;
+	ul {
+		display: flex;
+		li {
+			p {
+				background-color: #000000;
+				padding: 30px;
+				border-radius: 30px;
+				margin-top: 20%;
+				margin-left: 20%;
+				font-size: 28px;
+				width: 70%;
+				color: #ffffff;
+				font-family: sans-serif;
+				transition: 1.5s;
+			}
+			p:hover {
+				color: #000;
+				background-color: #fff;
+			}
+			img {
+				height: 600px;
+				transition: 2s;
+			}
+			img:hover {
+				transform: scale(1.3);
+				border-radius: 130px;
+				background-color: #000000;
+				padding: 30px;
+			}
+		}
+	}
+}
+.div-ul {
+	background-color: #d1c1c1;
+	padding-bottom: 10%;
+	ul {
+		padding-top: 10%;
+		margin-left: 2%;
+		margin-right: 2%;
+		display: flex;
+		gap: 5%;
+		li {
+			img {
+				border-radius: 15px;
+				width: 100%;
+				height: 400px;
+			}
+			button {
+				font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+				margin-top: 5%;
+				margin-left: 2%;
+				font-size: 30px;
+				background-color: hsl(0, 45%, 56%);
+				border-radius: 20px;
+				padding: 15px;
+				transition-duration: 0.4s;
+			}
+			button:hover {
+				color: #000000;
+				transform: scale(1.1);
+				background-color: hsl(0, 100%, 97%);
+			}
+		}
+	}
+}
+
+.div-img {
+	background-color: hsl(0, 19%, 85%);
+	padding-bottom: 5%;
+	padding-top: 5%;
+	.ul-img2{
+		.ul-li2-img1 {
+			object-fit: cover;
+			border-radius: 20px;
+			position: absolute;
+			margin-top: 2%;
+			width: 55%;
+			height: 250px;
+			margin-left: 45%;
+		}
+
+		.ul-li2-img2 {
+			object-fit: cover;
+			border-radius: 20px;
+			position: absolute;
+			margin-top: 20%;
+			width: 55%;
+			height: 250px;
+			margin-left: 45%;
+		}
+	}
+	.ul-img1{
+		li{
+			img{
+				margin-left: 2%;
+				margin-top: 2%;
+				width: 40%;
+                
+				border-radius: 20px;
+				height: 510px;
+			}
+		}
+	}
+}
